@@ -24,10 +24,6 @@
     --fonte-tamanho-padrao:20px;
 }
 
-body{
-    font-family: var(--fonte-padrao);
-}
-
 header{
     background-color: var(--cor4);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
@@ -86,81 +82,46 @@ nav ul{
     margin-left: 550px;
 }
 
-
 main{
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 30px;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
-    border-radius: 0px 0px 10px 10px;
+    font-family: var(--fonte-tamanho-padrao);
+    font-size: var(--fonte-tamanho-padrao);
+    padding-top: 2vh;
+    padding-bottom: 10vh;
+    line-height: 2.2em;
+    text-align: center;
+}
+section{
+    padding: 10px;
 }
 
-main h2{
-    text-indent: 15px;
+section h2{
     font-family: var(--fonte-destaque);
-    color: var(--cor2);
-    padding-bottom: 10px;
     font-size: var(--fonte-tamanho-principal);
 }
 
-main  h3{
-    font-size: var(--fonte-tamanho-secundario);
-    background-image: linear-gradient(to right, var(--cor1),transparent);
-    margin: 10px 0px 10px 15px;
+section.normal{
+    background-color: white;
+    color: black;
 }
 
-main p{
-    margin: 15px;
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 2em;
-    font-size: 1em;
-}
-
-main strong{
+section.imagem{
+    background-color:rgb(51, 51, 51);
+    color: white;
     font-weight: bold;
-    color: var(--cor4);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-article{
-    font-size: var(--fonte-tamanho-padrao);
+section#img01{
+    background-image: url('imagens/14-147940_futebol-brasileiro.jpg');
+    
+
 }
 
-article .box{
-    display: inline-flex;
-}
-
-article .box img{
-    margin-right: 10px;
-    margin-left: 15px;
-    margin-top: 15px;
-}
-
-article .box p{
-    text-align: justify;
-    text-indent: 15px;
-}
-
-.credito{
-    text-indent: 15px;
-}
-
-#grupob{
-    display: block;
-    margin: auto;
-    max-width: 970px;
-}
-
-#artilharia{
-    max-width: 500px;
-}
-
-
-#jogospaulista{
-    width: 500px;
+section#img02{
+    background-image: url('imagens/action_soccer_socceraction-831910.jpg!d');
+    background-position: bottom center;
 }
 
 footer{
