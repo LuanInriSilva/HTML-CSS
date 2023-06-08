@@ -78,9 +78,79 @@
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
     </p>
-    
-
     </form>
-
+    <h1>mais um</h1>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc"><label for="imasc">Masculino</label><br>
+            <input type="radio" name="sexo" id="ifem" checked><label for="ifem">Feminino</label>
+        </fieldset>
+    </form>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <p>
+                <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label>
+                <input type="checkbox" name="esbaq" id="iesbas"><label for="iesbaq">Basquete</label>
+                <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label>
+                <input type="checkbox" name="esvol" id="iesvol"><label for="iesvol">Vôlei</label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+    <h1>Vamos para o video 25 </h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+        <p>
+            <label for="inivel">Nivel</label>
+            <input type="range" name="niv" id="iniv" min="1" max="5"  value="1">
+        </p>
+        <p>
+            <label for="ifot">Foto</label>
+            <input type="file" name="fot" id="ifot">
+        </p>
+    </form>
+    <h2>Novo formulario</h2>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="iest">Estado</label>
+                <select name="iest" id="iest">
+                    <optgroup label="Região Suldeste">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="SC" selected>Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="PR">Paraná</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="COZ">Cozinheiro</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">mensagem</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar"><br>
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
 </body>
 </html>
